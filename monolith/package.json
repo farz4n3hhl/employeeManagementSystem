@@ -1,0 +1,21 @@
+{
+  "name": "employeeservice",
+  "version": "1.0.0",
+  "description": "A nodejs server to manage saving and restoring employee's data in redis.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.partdp.ir/internship/projects/farzaneh.hallaji/employeeservice.git"
+  },
+  "author": "Farzaneh Hallaji",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "jsonschema": "^1.4.0",
+    "random-username-generator": "^1.0.4",
+    "redis": "^3.1.2"
+  }
+}

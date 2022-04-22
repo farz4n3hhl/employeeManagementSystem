@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DeleteData",
+    "type": "object",
+    "properties": {
+      "username": {
+        "type": "string",
+        "minLength": 6
+      },
+      "parent": {
+        "type": "string",
+        "minLength": 6
+      }
+    },
+    "additionalProperties": false,
+    "required": ["username", "parent"]
+  }
