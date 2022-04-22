@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "UpdateInfo",
+    "type": "object",
+    "properties": {
+      "username": {
+        "type": "string",
+        "minLength": 6
+      },
+      "jobTitle": {
+        "type": "string",
+        "minLength": 8
+      },
+      "jobSkills": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 3
+         }
+      }
+    },
+    "additionalProperties": false,
+    "required": ["username"],
+    "minProperties": 2
+  }
