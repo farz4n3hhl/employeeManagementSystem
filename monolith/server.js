@@ -1,7 +1,6 @@
 const http = require('http')
 const { serverOptions } = require('./config')
 const { requestHandler } = require('./app/index')
-const { createRedisClient } = require('./database/index')
 
 
 const server = http.createServer((req, res)=> {

@@ -7,6 +7,22 @@ exports.messages = {
         fa: 'داده ها ذخیره شد!', 
         en: 'Data stored successfully!'
     },
+    LOGIN_SUCCESS: {
+        fa: 'ورود به سامانه موفقیت آمیز بود!', 
+        en: 'Logged In to system successfully!'
+    },
+    LOGIN_FAIL: {
+        fa: 'ورود به سامانه ناموفق بود. نام کاربری یا رمز عبور صحیح نمی باشد.', 
+        en: 'Loggin to system failed! Credentials is not be true!'
+    },
+    SIGNUP_SUCCESS:{
+        fa: 'حساب کاربری با موفقیت ایجاد شد!', 
+        en: 'Account created successfully!'
+    },
+    LOGOUT_SUCCESS: {
+        fa: 'خروج از سامانه موفقیت آمیز بود!',
+        en: 'Logged out successfully!'
+    },
     DEL_SUCCESS: {
         fa: 'داده ها با موفقیت حذف شد', 
         en: 'Data deleted successfully!'
@@ -55,5 +71,9 @@ exports.messages = {
     NO_EMPLOYEE: {
         en: 'This manager does not have any employee.',
         fa: 'این سرپرست کارمندی ندارد.'
+    },
+    FORBBIDEN: {
+        en: 'Forbbiden request!',
+        fa: 'درخواست غیر مجاز!'
     }
 }

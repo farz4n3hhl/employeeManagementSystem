@@ -1,4 +1,4 @@
-const { routes } = require('./api/index')
+const { routes } = require('./api')
 const parser = require('url')
 
 
