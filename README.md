@@ -17,17 +17,22 @@ The purpose of this project is to convert a monolith project to a microservice a
 
 * Attendance and Leave Management Service: 
 
-  This service manages which time each employee attend and leave. It also keep track of the leaving days and how many leave days each employee can have and how many of those are remained. Then, It gives dificit and additional work hours to salary management system so it can calculate the final salary for each employee.
+  This service manages which time each employee attend and leave. It also keep track of the leaving days and how many leave days each employee can have and how many of those are remained. Each employee can also get if he had any raise! Then, It gives dificit work days to salary management system so it can calculate the final salary for each employee.
 
 <br/>
 
 * Salary Management System:
-  This service manages and calclates the salary information of each employee, for example for employee x what is the basic salary? Does he have any dificit/additional work hours to pay? Does he have any raise? If yes, how much is the raise? 
-  Each employee can get his payroll from this service.
+  This service manages and calclates the salary information of each employee, for example for employee x what is the basic salary? Does he have any additional work days to pay? Each employee can get his payroll from this service.
 
 <br/><br/>
 
 These four services has communication and dependencies but the duty of each one is separated and isolated (They have different databases). So, this is why in our point of view the monolith employee-management-system can be divided into these four services in microservice architecture.
+<br/>
+
+## Our database Design
+![dbdesign drawio (1)](https://user-images.githubusercontent.com/52166819/165937689-bcd44120-55a7-4997-a822-eb3fe9ec7909.svg)
+
+
 <br/>
 In the following we're gonna show you the dependency diagram and internal calls diagram for this system and then explain each one.
 <br/><br/>
