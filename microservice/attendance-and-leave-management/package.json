@@ -1,0 +1,11 @@
+{
+  "name": "attendance-and-leave-management",
+  "version": "1.0.0",
+  "description": "Store and process of user's attendance and leave times.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farzaneh Hallaji-Maedeh Nadehi",
+  "license": "ISC"
+}
