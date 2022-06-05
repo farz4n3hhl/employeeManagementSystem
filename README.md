@@ -45,6 +45,20 @@ As you can see in the above diagram, employee interacts with the 4 services. At 
 
 <br/><br/>
 
+    attendance-and-leave-management-service --> user-management-service:
+        where: monolith/app/controllers.js,
+        reason: imported and used
+        solution: trust user_id from jwt token
+    data-management-service --> user-management-service:
+        where: monolith/app/controllers.js,
+        reason: must obtain user from database
+        solution: trust user_id from jwt token
+    salary-service --> user-management-service:
+        where: monolith/app/controllers.js,
+        happened: monolith/courses/views.py, class: CourseView
+        reason: must obtain user from database
+        solution: GRPC
+
 ## Internal Calls Diagram
 ![Internal calls diagram](https://user-images.githubusercontent.com/52166819/164727960-f0e27e4e-274a-4da5-ba7f-64f9ef9d5fc3.svg)
  <br/>

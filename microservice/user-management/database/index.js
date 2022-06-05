@@ -18,6 +18,8 @@ const DatabaseConnection = function() {
 const dbSize = function() {
     return dataBase.dbsize();
 }
+
+
 module.exports = {
     connectToDB,
     DatabaseConnection,

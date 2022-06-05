@@ -1,0 +1,14 @@
+{
+  "name": "salary-management",
+  "version": "1.0.0",
+  "description": "Manage users'salary info. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farzaneh Hallaji - Maedeh Nadehi",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

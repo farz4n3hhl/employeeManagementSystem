@@ -10,4 +10,4 @@ const server = http.createServer((req, res)=> {
 
 server.listen(serverOptions.port, serverOptions.hostname, () => {
     console.log(`Server running at http://${serverOptions.hostname}:${serverOptions.port}/`);
-}) 
+})

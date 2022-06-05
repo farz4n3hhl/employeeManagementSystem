@@ -14,7 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "hash-password": "^0.1.1",
     "jsonschema": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "password-hash": "^1.2.2",
     "random-username-generator": "^1.0.4",
     "redis": "^3.1.2"
   }
