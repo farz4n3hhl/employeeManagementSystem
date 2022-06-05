@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const grpc = require('@grpc/grpc-js');
 const { sendResponse } = require('../../utils/response');
 const { statusCodes } = require('../../utils/statusCodes');
 const { messages } = require('../../utils/messages');
@@ -37,6 +38,7 @@ const getUserData = function(req, res) {
     console.log("=======InGetUserDataFunction");
     try {
         if(req.headers.cookie) {
+            grpc.RequesterBuilder()
             const decodedToken = jwt.decode(req.headers.cookie.split('token=')[1]);
             if(decodedToken.username) {
                 getDataFromDB(decodedToken.username, res, 1);

@@ -77,7 +77,7 @@ exports.getDataFromDB = function (key, res, dbIndex) {
             return;
         } 
         if(reply===1) {
-             db.hgetall(key, function(err, data) {
+             db.hgetalldb.hgetall(key, function(err, data) {
                 if(err){
                     errorHandler(err, 'get-from-db');
                     sendResponse(res, statusCodes.NOT_FOUND, messages.NOT_FOUND);

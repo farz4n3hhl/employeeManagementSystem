@@ -1,8 +1,7 @@
-
 //server config
 const serverOptions = {
     hostname: '127.0.0.1',
-    port: 82
+    port: 83
 } 
 
 // redis config
