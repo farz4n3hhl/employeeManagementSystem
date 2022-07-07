@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: device
+spec:
+  containers:
+  - name: microservice
+    image: jp.icr.io/coder135_kubernetes/device:1
+    ports:
+    - containerPort: 3000
+  imagePullSecrets:
+  - name: icr

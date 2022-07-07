@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+    apigateway:
+        build:
+            context: ./apigatway
+            dockerfile: Dockerfile
+        image: 9712762205/apigateway
+        container_name: apigateway
+        restart: unless-stopped
+        ports:
+            - "3000:3000"
+    attendanceandleavemanagement:
+        build:
+            context: ./attendanceandleavemanagement
+            dockerfile: Dockerfile
+        image: 9712762205/attendanceandleavemanagement
+        container_name: attendanceandleavemanagement
+        restart: unless-stopped
+
+    datamanagement:
+        build:
+            context: ./datamanagement
+            dockerfile: Dockerfile
+        image: 9712762205/datamanagement
+        container_name: datamanagement
+        restart: unless-stopped
+
+    salarymanagement:
+        build:
+            context: salarymanagement
+            dockerfile: Dockerfile
+        image: 9712762205/salarymanagement
+        container_name: salarymanagement
+        restart: unless-stopped
+
+    usermanagement:
+        build:
+            context: ./usermanagement
+            dockerfile: Dockerfile
+        image: 9712762205/usermanagement
+        container_name: usermanagement
+        restart: unless-stopped
+
+    redis:
+        image: redis:latest
+        container_name: heuristic_margulis
+        restart: unless-stopped
