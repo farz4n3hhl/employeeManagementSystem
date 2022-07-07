@@ -1,0 +1,17 @@
+{
+  "name": "data-management",
+  "version": "1.0.0",
+  "description": "Store and process on user's personal data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farzaneh Hallaji - Maedeh Nadehi",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.7",
+    "jsonschema": "^1.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "redis": "^3.1.2"
+  }
+}
